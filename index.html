@@ -1,1 +1,136 @@
-<h1>hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Mobiflow</title>
+  </head>
+  <body>
+    <div class="p-4">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="./logo.png" alt="Optimile Test" style="height: 80px" />
+      </div>
+      <div class="card p-4">
+        <form method="post">
+          <div id="div_id_name" class="mb-3">
+            <label for="id_name" class="form-label requiredField">
+              Name on Credit Card<span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              required=""
+              style="max-width: 20em"
+              maxlength="128"
+              class="form-control"
+              id="id_name"
+            />
+          </div>
+          <div id="div_id_number" class="mb-3">
+            <label for="id_number" class="form-label requiredField">
+              Card Number<span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              name="number"
+              required=""
+              style="max-width: 20em"
+              maxlength="32"
+              class="form-control"
+              id="id_number"
+            />
+          </div>
+          <div id="div_id_expiration" class="mb-3">
+            <label class="form-label requiredField">
+              Expiration<span class="text-danger">*</span>
+            </label>
+            <div class="d-flex gap-3">
+              <select
+                name="expiration_0"
+                required=""
+                class="form-select"
+                id="id_expiration_0"
+                style="max-width: 9.5em"
+                data-none-selected-text="&nbsp;"
+              >
+                <option value="">Month</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select
+                name="expiration_1"
+                required=""
+                class="form-select"
+                id="id_expiration_1"
+                style="max-width: 9.5em"
+                data-none-selected-text="&nbsp;"
+              >
+                <option value="">Year</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+                <option value="2038">2038</option>
+                <option value="2039">2039</option>
+              </select>
+            </div>
+          </div>
+          <div id="div_id_cvv2" class="mb-3">
+            <label for="id_cvv2" class="form-label">
+              CVV2 Security Number
+            </label>
+            <input
+              type="text"
+              name="cvv2"
+              autocomplete="cc-csc"
+              style="max-width: 5em"
+              maxlength="4"
+              class="textinput form-control"
+              aria-describedby="id_cvv2_helptext"
+              id="id_cvv2"
+            />
+            <div id="id_cvv2_helptext" class="form-text">
+              Last three digits located on the back of your card. For American
+              Express the four digits found on the front side.
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="">
+              <button
+                class="btn btn-primary"
+                name="create"
+                type="submit"
+                value="1"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
